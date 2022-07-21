@@ -1,4 +1,5 @@
 
+
 function Quick()
 {
     //Setting Time complexities
@@ -57,7 +58,7 @@ function quick_partition (start, end)
 
     for(var t=start;t<=i;t++)
     {
-        div_update(divs[t],div_sizes[t],"green");//Color update
+        div_update(divs[t],div_sizes[t],"orange");//Color update
     }
 
     return i-1;//return the position of the pivot
@@ -73,4 +74,5 @@ function quick_sort (start, end )
         quick_sort (piv_pos +1, end) ;//sorts the right side of pivot.
     }
  }
+
 
