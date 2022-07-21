@@ -1,5 +1,6 @@
 
 
+
 function Bubble()
 {
     //Setting Time complexities
@@ -32,9 +33,10 @@ function Bubble()
             }
             div_update(divs[j],div_sizes[j], "blue");//Color updat
         }
-        div_update(divs[j],div_sizes[j], "green");//Color update
+        div_update(divs[j],div_sizes[j], "orange");//Color update
     }
-    div_update(divs[0],div_sizes[0], "green");//Color update
+    div_update(divs[0],div_sizes[0], "orange");//Color update
 
     enable_buttons();
 }
+
