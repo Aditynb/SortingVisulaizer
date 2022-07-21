@@ -1,4 +1,5 @@
 
+
 function Merge()
 {
     //Setting Time complexities
@@ -49,7 +50,7 @@ function merge_sort(start,mid,end)
     for(var t=0;t<k;t++)
     {
         div_sizes[start++]=Arr[t];
-        div_update(divs[start-1],div_sizes[start-1],"green");//Color update
+        div_update(divs[start-1],div_sizes[start-1],"orange");//Color update
     }
 }
 
@@ -58,7 +59,7 @@ function merge_partition(start,end)
     if(start < end)
     {
         var mid=Math.floor((start + end) / 2);
-        div_update(divs[mid],div_sizes[mid],"yellow");//Color update
+        div_update(divs[mid],div_sizes[mid],"blue");//Color update
 
         merge_partition(start,mid);
         merge_partition(mid+1,end);
@@ -66,4 +67,5 @@ function merge_partition(start,end)
         merge_sort(start,mid,end);
     }
 }
+
 
