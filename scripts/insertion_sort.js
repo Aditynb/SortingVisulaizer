@@ -43,11 +43,12 @@ function Insertion()
 
         for(var t=0;t<j;t++)
         {
-            div_update(divs[t],div_sizes[t],"green");//Color update
+            div_update(divs[t],div_sizes[t],"orange");//Color update
         }
     }
-    div_update(divs[j-1],div_sizes[j-1],"green");//Color update
+    div_update(divs[j-1],div_sizes[j-1],"orange");//Color update
 
     enable_buttons();
 }
+
 
