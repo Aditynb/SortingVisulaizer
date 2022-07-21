@@ -81,14 +81,15 @@ function heap_sort()
     for(var i=array_size-1;i>0;i--)
     {
         swap(0,i);
-        div_update(divs[i],div_sizes[i],"green");//Color update
+        div_update(divs[i],div_sizes[i],"orange");//Color update
         div_update(divs[i],div_sizes[i],"yellow");//Color update
 
         max_heapify(i,0);
 
         div_update(divs[i],div_sizes[i],"blue");//Color update
-        div_update(divs[i],div_sizes[i],"green");//Color update
+        div_update(divs[i],div_sizes[i],"orange");//Color update
     }
-    div_update(divs[i],div_sizes[i],"green");//Color update
+    div_update(divs[i],div_sizes[i],"orange");//Color update
 }
+
 
